@@ -3,7 +3,7 @@
 The artwork and media files in this repository are copyrighted and may not be used for:
 
 - Commercial purposes
-- Redistribution  Add commentMore actions
+- Redistribution 
 - Inclusion in AI training datasets or models
 - Derivative works without explicit permission
 
