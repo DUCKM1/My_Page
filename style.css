@@ -1,16 +1,17 @@
 body {
- background-color: #101014;
+    background-color: #101014;
 }
 
 .SD {
     position: fixed;
-    top: 0; /* anchors down the div */
-    right: 0; /* anchors down the div */
-    bottom: 0; /* anchors down the div */
+    top: 0;
+    right: 0;
+    bottom: 0;
     margin: 1vh;
     display: flex;
-    height: 98vh; /* vh 100 = 100% of viewport so account for the margin (100 -2 -2)*/
-    width: 24vw; /* vh - viewport height vw - viewport width */
+    height: 98vh;
+    width: 24vw;
+    min-width: 200px; /* Ensures it doesn't get too small */
     background-color: #202024;
     border-radius: 12px;
 }
@@ -21,6 +22,7 @@ body {
     top: 0;
     right: 0;
     margin: 1vh;
-    width: 74vw;
+    width: calc(100vw - 24vw - 4vh); /* Dynamically calculates width based on SD width */
+    max-width: calc(100vw - 200px - 4vh); /* Ensures space when SD hits min-width */
     height: 10vh;
 }
