@@ -1,5 +1,8 @@
 body {
     background-color: #101014;
+    margin: 0;
+    padding: 0;
+
 }
 
 .SD {
@@ -11,7 +14,6 @@ body {
     display: flex;
     height: 98vh;
     width: 24vw;
-    min-width: 200px; /* Ensures it doesn't get too small */
     background-color: #202024;
     border-radius: 12px;
 }
@@ -23,6 +25,15 @@ body {
     right: 0;
     margin: 1vh;
     width: calc(100vw - 24vw - 4vh); /* Dynamically calculates width based on SD width */
-    max-width: calc(100vw - 200px - 4vh); /* Ensures space when SD hits min-width */
     height: 10vh;
+}
+
+.images {
+    position: fixed;
+    top: 12vh;
+    width: 74vw;
+    height: 50vh;
+    margin: 1vh;
+    display: flex;
+    background-color: red;
 }
