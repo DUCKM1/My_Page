@@ -25,14 +25,14 @@ body {
     right: 0;
     margin: 1vh;
     width: calc(100vw - 24vw - 4vh); /* Dynamically calculates width based on SD width */
-    height: 10vh;
+    height: 14vh;
 }
 
 .images {
     position: fixed;
-    top: 12vh;
-    width: 74vw;
-    height: 50vh;
+    top: calc(14vh + 3vh); /* MG height + gap (1vh margin top + 1vh margin bottom + 1vh extra gap) */
+    width: calc(100vw - 24vw - 4vh); /* Same width calculation as MG */
+    height: calc(100vh - 14vh - 5vh); /* Full height - MG height - total margins/gaps */
     margin: 1vh;
     display: flex;
     background-color: red;
