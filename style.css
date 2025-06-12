@@ -25,9 +25,8 @@ body {
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
-    margin: 2vh;
+    padding: 2vh;
     box-sizing: border-box;
-    padding-top: 2vh;
 }
 
 .SD_CT h1 {
