@@ -30,10 +30,25 @@ body {
 
 .images {
     position: fixed;
-    top: calc(14vh + 3vh); /* MG height + gap (1vh margin top + 1vh margin bottom + 1vh extra gap) */
-    width: calc(100vw - 24vw - 4vh); /* Same width calculation as MG */
-    height: calc(100vh - 14vh - 5vh); /* Full height - MG height - total margins/gaps */
-    margin: 1vh;
     display: flex;
+    flex-wrap: wrap;
+    align-content: flex-start;
+    box-sizing: border-box;
+
+    top: calc(14vh + 3vh);
+    width: calc(100vw - 24vw - 4vh);
+    height: calc(100vh - 14vh - 5vh);
+    margin: 1vh;
+    /* background-color: #270202; color to see the div*/
+}
+
+.contents {
     background-color: red;
+    display: flex;
+    /* Calculate width: (100% - 2 gaps) / 3 items */
+    width: calc((100% - 12vh) / 3);
+    aspect-ratio: 1 / 1; /*square */
+    margin: 2vh;
+    border-radius: 4px;
+    overflow: hidden; /* Keeps images within rounded corners */
 }
